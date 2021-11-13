@@ -1,1 +1,40 @@
-<p>sellerlist works!</p>
+<div class="py-5 text-center">
+  <h2>Book List</h2>
+  <p class="lead">
+    List of books available for sales
+  </p>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Total Quantity</th>
+        <th scope="col">Sold Quantity</th>
+        <th scope="col">Unsold Quantity</th>
+        <th scope="col">Price Set</th>
+        <th scope="col">Profit</th>
+        <th scope="col"></th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ book.name }}</td>
+        <td>{{ book.Tquantity }}</td>
+        <td>{{ book.Squantity }}</td>
+        <td>{{ book.unSold }}</td>
+        <td>{{ book.priceSet }}</td>
+        <td>{{ book.profit }}</td>
+
+        <button  type="button"title="Edit"><i class="fa fa-edit"></i></button>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+

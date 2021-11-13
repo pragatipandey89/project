@@ -1,0 +1,21 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color:white;
+}
+tbody{
+  text-align: center;
+}
+button:hover{
+  color: white;
+  background-color: green;
+}
+
+button{
+  color: darkgreen;
+  border: none;
+}
+
+i{
+  font-size: 26px;
+}
